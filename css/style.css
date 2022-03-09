@@ -41,8 +41,9 @@ a{
     font-weight: bold;
 }
 
-.text{
+p.text{
     font-size: 1.8em;
+    line-height: 1.6em;
 }
 
 /* Buttons */
@@ -59,6 +60,10 @@ a{
     padding: .7em 1.5em;
     font-size: 2em;
 }
+/* Column */
+.column{
+    float: left;
+}
 
 /* Header */
 header{
@@ -66,24 +71,23 @@ header{
 }
 
 /* Nav */
-.column{
-    float: left;
+nav .column{
     height: 70px;
     line-height: 70px;
     font-size: 1.6em;
 }
 
-.column.left,
-.column.right{
+nav .column.left,
+nav .column.right{
     width: 15%;
     text-align: left;
 }
 
-.column.right{
+nav .column.right{
     text-align: right;
 }
 
-.column.center{
+nav .column.center{
     width: 70%;
     text-align: center;
 }
@@ -123,11 +127,8 @@ nav li a{
     height: 500px;
 }
 
-.container-banner-text{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+.banner .container{
+    padding: 100px 200px;
 }
 
 .container-banner-text .title,
@@ -140,15 +141,12 @@ nav li a{
     padding-bottom: 1em;
 }
 
-.container-banner-text .text{
-    line-height: 1.3em;
-}
-
 .container-buttons{
     text-align: center;
     margin: 4em 0;
 }
 
+/* Migliorare la freccetta nel primo bottone grande */
 .container-buttons :first-child{
     background-color: white;
     color: black;
@@ -159,5 +157,42 @@ nav li a{
     background-color: #23272a;
     color: white;
     margin: 0 1.5em;
+}
+
+/* Section*/
+.column.img{
+    width: 65%;
+    text-align: center;
+}
+
+.column.img img{
+    width: 70%;
+    object-fit: cover;
+    margin: 10em 0;
+}
+
+.column.text{
+    width: 35%;
+    color: #23272a;
+    margin: 10em 0;
+}
+
+p.text{
+    padding-top: 2em;
+}
+
+/* Background section 2  */
+main section:nth-child(3){
+    background-color: #f6f6f6;
+}
+
+main section:nth-child(3)::before{
+    content: url(../img/wave.svg);
+    color: #f6f6f6;
+}
+
+main section:nth-child(3)::after{
+    content: url(../img/wave.svg);
+    color: white;
 }
 
