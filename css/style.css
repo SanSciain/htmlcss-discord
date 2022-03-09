@@ -5,3 +5,93 @@
     box-sizing: border-box;
 }
 
+/* Common */
+html {
+    font-family: "Whitney", sans-serif;
+    font-size: 62.5%;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Container */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Buttons */
+.button{
+    border-radius: 50px;
+}
+
+.button.small{
+    padding: .6em 1em;
+}
+
+/* Header */
+header{
+    background-color: #3161e0;
+}
+
+/* Nav */
+.column{
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.6em;
+}
+
+.column.left,
+.column.right{
+    width: 15%;
+    text-align: left;
+}
+
+.column.right{
+    text-align: right;
+}
+
+.column.center{
+    width: 70%;
+    text-align: center;
+}
+
+nav img[alt="logo discord"]{
+    height: 50px;
+    vertical-align: middle;
+}
+
+nav li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1em;
+}
+
+nav li a{
+    color: white;
+}
+
+
+.column.right .button{
+    vertical-align: middle;
+    color: black;
+    background-color: white;
+}
+
