@@ -51,10 +51,11 @@ p.text{
 /* Buttons */
 .button{
     border-radius: 50px;
+    display: inline-block;
 }
 
 .button.small{
-    padding: .6em 1em;
+    padding: .3em 1em;
     font-size: 1em;
 }
 
@@ -62,10 +63,34 @@ p.text{
     padding: .7em 1.5em;
     font-size: 2em;
 }
+
 /* Column */
 .column{
     float: left;
 }
+
+.column.left,
+.column.right{
+    width: 15%;
+    text-align: left;
+}
+
+.column.right{
+    text-align: right;
+}
+
+.column.center{
+    width: 70%;
+    text-align: center;
+}
+
+/* Logo */
+img.logo{
+    height: 50px;
+    vertical-align: middle;
+}
+
+
 
 /* Header */
 header{
@@ -77,26 +102,6 @@ nav .column{
     height: 70px;
     line-height: 70px;
     font-size: 1.6em;
-}
-
-nav .column.left,
-nav .column.right{
-    width: 15%;
-    text-align: left;
-}
-
-nav .column.right{
-    text-align: right;
-}
-
-nav .column.center{
-    width: 70%;
-    text-align: center;
-}
-
-nav img[alt="logo discord"]{
-    height: 50px;
-    vertical-align: middle;
 }
 
 nav li{
@@ -114,6 +119,7 @@ nav li a{
     vertical-align: middle;
     color: black;
     background-color: white;
+    line-height: normal;
 }
 
 
@@ -126,7 +132,6 @@ nav li a{
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 500px;
 }
 
 .banner .container{
@@ -152,13 +157,13 @@ nav li a{
 .container-buttons :first-child{
     background-color: white;
     color: black;
-    margin: 0 1.5em;
+    margin: 1em 1.5em;
 }
 
 .container-buttons :nth-child(2){
     background-color: #23272a;
     color: white;
-    margin: 0 1.5em;
+    margin: 1em 1.5em;
 }
 
 /* Section*/
@@ -232,3 +237,75 @@ main section:nth-child(4)::after{
 }
 
 /* Footrer */
+footer{
+    background-color: #23272a;
+}
+
+/* Top Footer */
+.top-footer{
+    padding-top: 50px;
+}
+/* Icons */
+.icons-language{
+    width: 40%;
+}
+
+.icons-language h3{
+    color: #7289da;
+    font-size: 2.5em;
+}
+
+.language{
+    padding: 2.5em 0;
+}
+
+.language img{
+    display: inline;
+    height: 1.5em;
+    width: 2.5em;
+}
+
+.language span{
+    color: white;
+    font-size: 1.5em;
+}
+
+.icons{
+    color: white;
+    font-size: 2em;
+}
+
+.icons i{
+    padding: 0 .7em;
+}
+
+
+/* Lists */
+.lists{
+    width: 15%;
+}
+
+
+
+
+
+
+/* Bottom Footer */
+
+.bottom-footer{
+    border-top: 2px solid #8ea1e1;
+    padding-top: 3em;
+    margin-bottom: 5em;
+}
+
+.bottom-footer .column.right{
+    float: right;
+}
+
+
+/* allineare centralemnte il logo e il pulsante */
+.bottom-footer .button.small{
+    background-color: #8ea1e1;
+    color: white;
+    text-align: middle;
+}
