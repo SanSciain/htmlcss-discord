@@ -188,7 +188,7 @@ p.text{
 }
 
 /* Background section 3 5*/
-main section:nth-child(even){
+main section:nth-child(odd){
     background-color: #f6f6f6;
 }
 
@@ -283,6 +283,17 @@ footer{
 /* Lists */
 .lists{
     width: 15%;
+    font-size: 1.5em;
+    color: white;
+}
+
+li.head{
+    font-weight: bold;
+    color: #7289da;
+}
+
+.lists li{
+    padding: .5em 0;
 }
 
 
