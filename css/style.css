@@ -35,6 +35,15 @@ a{
     margin: 0 auto;
 }
 
+/* Text */
+.title{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.text{
+    font-size: 1.8em;
+}
 
 /* Buttons */
 .button{
@@ -43,11 +52,17 @@ a{
 
 .button.small{
     padding: .6em 1em;
+    font-size: 1em;
+}
+
+.button.big{
+    padding: .7em 1.5em;
+    font-size: 2em;
 }
 
 /* Header */
 header{
-    background-color: #3161e0;
+    background-color: #255ee9;
 }
 
 /* Nav */
@@ -93,5 +108,56 @@ nav li a{
     vertical-align: middle;
     color: black;
     background-color: white;
+}
+
+
+/* Main */
+
+/* Banner */
+.banner{
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 500px;
+}
+
+.container-banner-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container-banner-text .title,
+.container-banner-text .text{
+    text-align: center;
+    color: white;
+}
+
+.container-banner-text .title{
+    padding-bottom: 1em;
+}
+
+.container-banner-text .text{
+    line-height: 1.3em;
+}
+
+.container-buttons{
+    text-align: center;
+    margin: 4em 0;
+}
+
+.container-buttons :first-child{
+    background-color: white;
+    color: black;
+    margin: 0 1.5em;
+}
+
+.container-buttons :nth-child(2){
+    background-color: #23272a;
+    color: white;
+    margin: 0 1.5em;
 }
 
