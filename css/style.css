@@ -194,18 +194,23 @@ main section:nth-child(odd){
 
 /* Waves */
 main section:nth-child(3)::before{
-    content: url(../img/wave.svg);
-    color: #f6f6f6;
+    content: url(../img/wave2.svg);
+    display: block;
+    background-color: white;
+    margin-bottom: -2px;
 }
 
 main section:nth-child(3)::after{
     content: url(../img/wave.svg);
-    color: white;
+    display: block;
+    margin-bottom: -2px;
 }
 
 main section:nth-child(4)::after{
-    content: url(../img/wave.svg);
-    color: #f6f6f6;
+    content: url(../img/wave2.svg);
+    display: block;
+    margin-bottom: -2px;
+
 }
 
 /* Section 5 */
