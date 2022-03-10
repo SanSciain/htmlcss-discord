@@ -300,9 +300,10 @@ footer{
     color: white;
 }
 
-li.head{
+.lists h5.head{
     font-weight: bold;
     color: #7289da;
+    font-size: 1.2em;
 }
 
 .lists li{
@@ -322,14 +323,14 @@ li.head{
     margin-bottom: 5em;
 }
 
+
 .bottom-footer .column.right{
     float: right;
 }
 
 
-/* allineare centralemnte il logo e il pulsante */
 .bottom-footer .button.small{
     background-color: #8ea1e1;
     color: white;
-    text-align: middle;
+
 }
