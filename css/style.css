@@ -223,13 +223,21 @@ main section:nth-child(4)::after{
 .container-img{
     padding: 5em 0 3em;
 }
-
+/* soluzione non giusta
 .container-text::before{
     content: url(../img/stars.svg);
-}
+} */
+
+
 
 .container-text{
-    padding-bottom: 5em;
+    padding-top: 3em;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 52%;
+    
+    margin: 0 auto 5em;
 }
 
 .bigger-section h3{
